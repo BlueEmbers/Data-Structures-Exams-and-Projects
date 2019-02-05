@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.SearchSchoolsController">
+   <children>
+      <ComboBox fx:id="search" prefHeight="39.0" prefWidth="367.0" />
+      <Button fx:id="connect" layoutX="68.0" layoutY="174.0" mnemonicParsing="false" onAction="#saveStuff" text="Button" />
+   </children>
+</AnchorPane>

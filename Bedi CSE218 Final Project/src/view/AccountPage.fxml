@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AccountPageController">
+   <children>
+      <GridPane layoutY="81.0" prefHeight="259.0" prefWidth="200.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="133.0" minWidth="10.0" prefWidth="99.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="155.0" minWidth="10.0" prefWidth="101.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Name:" />
+            <Label text="Username:" GridPane.rowIndex="1" />
+            <Label text="Email:" GridPane.rowIndex="2" />
+            <Label text="GPA:" GridPane.rowIndex="3" />
+            <Label text="SAT Math" GridPane.rowIndex="5" />
+            <Label text="SAT Reading" GridPane.rowIndex="4" />
+            <Label fx:id="satM" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label fx:id="satR" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="gpa" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="email" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="userName" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="name" text="Label" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <Button fx:id="search" layoutX="28.0" layoutY="412.0" mnemonicParsing="false" onAction="#searchPage" text="Search" />
+      <Text layoutX="28.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome" wrappingWidth="111.3642578125">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
